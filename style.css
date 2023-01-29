@@ -74,7 +74,7 @@ summary~a:hover {
     padding: 20%;
     height: 100%;
     width: 100%;
-    background-image: url(src/photos/frontpage.jpg);
+    background-image: url(src/photos/frontpage.jpg) repeat 0,0;
     background-size: cover;
     background-position: center;
     height: 100%;
