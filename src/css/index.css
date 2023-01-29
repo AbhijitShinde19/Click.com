@@ -1,36 +1,8 @@
-body{
+body {
     margin: 0;
     padding: 0;
     background-color: black;
     color: white;
-}
-header h2{
-    font-family: cursive;
-}
-
-/*
-header {
-    /* padding: 15px;
-    display: grid;
-    grid-template-columns: 4fr 8fr;
-    background-color: black;
-    color: white;
-    align-items: center;
-}
-*/
-.logo {
-    padding: 15px;
-    align-items: center;
-}
-
-nav ul {
-    /* display: flex;
-    /* flex-wrap: wrap; 
-    justify-content: space-between;
-    padding: 15px;
-    list-style-type: none;
-    font-size: 20px;
-    cursor: pointer; */
 }
 
 li details summary {
@@ -59,165 +31,26 @@ summary~a:hover {
 
 }
 
-*/
-/* body */
-
-.front div img {
+.gallary{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    padding: 10px;
+   
+}
+.pic img{
     width: 100%;
+    border: 5px solid white;
 }
-
-.text {
-    color: aliceblue;
-    align-items: center;
+footer{
     text-align: center;
-    padding: 20%;
-    height: 100%;
-    width: 100%;
-    background-image: url(/src/photos/frontpage.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    opacity: 0.9;
-}
-
-.text h2,
-input,
-button {
-    font-size: 40px;
-    font-family: sans-serif;
-}
-
-.heading h3 {
-    font-size: 40px;
-    margin-bottom: 30px;
-    text-align: center;
-    padding: 20px;
     background-color: black;
     color: white;
+    bottom: 0;
 }
 
-/* blog */
-
-.top3 {
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: 4fr 4fr 4fr;
-
-    /* background-color: black; */
-}
-
-.top3 div img {
-    width: 100%;
-    /* border: 20px solid black; */
-    padding: 5px;
-
-}
-
-/* popular */
-.box {
-    display: block;
-    float: left;
-    width: 25%;
-    position: relative;
-    padding: 10px;
-
-}
-
-
-.box img {
-    width: 100%;
-    display: block;
-}
-
-h3 {
-    text-align: center;
-    /* padding: 7px;
-    font-size: 40px; */
-}
-
-.box .text {
-    position: absolute;
-    font-size: 25px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: rgba(0, 0, 0, 0.3);
-    opacity: 0;
-}
-
-.box .text:hover {
-    opacity: 1;
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-@media screen and (max-width: 695px) {
-    #blog div {
-        display: grid;
-        grid-column: auto;
-        grid-template-columns: 12fr;
-        /* grid-row: auto; */
-    }
-
-    #blog div button {
-        position: absolute;
-        padding: 10px;
-        margin-top: 155px;
-        margin-left: 160px;
-        margin-bottom: -20px;
-    }
-
-    /* box */
-    .box {
+@media screen and (max-width: 695px){
+    .gallary{
         display: block;
-        float: right;
-        width: 100%;
-        /*position: relative;
-        padding: 50px; */
-
     }
-
-    .box img {
-        width: 100%;
-    }
-
-    .box p {
-        position: absolute;
-        font-size: 20px;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-    }
-
-    .text h2,
-    input,
-    button {
-        font-size: 20px;
-    }
-
 }
 
-
-
-/* footer */
-/* body footer {
-    color: white;
-    text-align: center;
-    position: relative;
-    bottom: 0px;
-    width: 100%;
-} */
-footer {
-    text-align: center
-}
