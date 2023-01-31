@@ -4,6 +4,9 @@ body {
     background-color: black;
     color: white;
 }
+header h2{
+    font-family: cursive;
+}
 
 li details summary {
     list-style-type: none;
@@ -61,9 +64,13 @@ summary~a:hover {
     opacity: 1;
 }
 
-h2 {
-    font-size: 36px;
+.overlay h2 {
+    font-size: 25px;
     text-shadow: 1px 1px 2px black;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+
 }
 
 @media screen and (max-width: 695px) {
@@ -74,6 +81,7 @@ h2 {
 
 footer {
     text-align: center;
+    font-family: cursive;
     background-color: black;
     color: white;
     bottom: 0;
