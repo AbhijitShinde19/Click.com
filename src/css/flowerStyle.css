@@ -31,45 +31,50 @@ summary~a:hover {
 
 }
 
-.gallary{
+.gallary {
     display: grid;
     grid-template-columns: 3fr 3fr 3fr 3fr;
-    padding: 10px;
-   
+    padding: 5px;
+
 }
-.pic img{
+.container img{
     width: 100%;
-    border: 5px solid white;
+}
+.container {
+    position: relative;
 }
 
-.Description{
+.overlay {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     position: relative;
-    bottom: 43px;
+    bottom:45px;
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    background-color: rgba(34, 35, 39, 0.54);
-   
-}
-.Description p{
-    margin-left: 15px;
-}
-.Description button{
-    margin-right: 15px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
 }
 
+.container:hover .overlay {
+    visibility: visible;
+    opacity: 1;
+}
 
-footer{
+h2 {
+    font-size: 36px;
+    text-shadow: 1px 1px 2px black;
+}
+
+@media screen and (max-width: 695px) {
+    .gallary {
+        display: block;
+    }
+}
+
+footer {
     text-align: center;
     background-color: black;
     color: white;
     bottom: 0;
 }
-
-@media screen and (max-width: 695px){
-    .gallary{
-        display: block;
-    }
-}
-
